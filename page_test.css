@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-size: cover; 
+    z-index: 1;
+}
+
+.card_face {
+    
+}
