@@ -1,4 +1,8 @@
-*{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
     padding: 0;
     margin: 0;
     outline: none;
@@ -6,25 +10,23 @@
     box-sizing: border-box;
 }
 
-img{
+img {
     width: 100%;
     display: flex;
 }
 
-a{
+a {
     text-decoration: none;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(17, 17, 17);
     user-select: none;
-    width: 100%;
-    height: 100%;
     display: inline-flexbox;
-    overflow: auto;
 }
 
-nav{
+nav {
     max-width: 1200px;
     margin: auto;
     padding: 2rem 1rem;
@@ -32,33 +34,31 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    
 }
 
-.btn{
+.btn {
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
     background-color: #1d4ed8;
     border-radius: 5px;
-    cursor:pointer;
+    cursor: pointer;
     transition: all 0.3s;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #1d4ed8;
-    box-shadow: 0px 4px 10px ;
+    box-shadow: 0px 4px 10px;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
     color: white;
 }
 
-
-header{
+header {
     position: relative;
     padding-top: 2rem;
     display: grid;
@@ -67,15 +67,14 @@ header{
     gap: 2rem;
 }
 
-header .centent h4{
+header .centent h4 {
     margin-bottom: 1rem;
     color: #ccc;
     font-size: 200px;
     font-weight: 600;
 }
 
-
-header .centent h1{
+header .centent h1 {
     color: #fff;
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -83,32 +82,29 @@ header .centent h1{
     line-height: 4rem;
 }
 
-header .content h1 span{
-
+header .content h1 span {
     font-family: "Honk", system-ui;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-variation-settings:
-    "MORF" 15,
-    "SHLN" 50;
+    font-variation-settings: "MORF" 15, "SHLN" 50;
 }
 
-header .content p{
+header .content p {
     margin-bottom: 2rem;
     color: #ccc;
 }
 
-header .image{
+header .image {
     position: relative;
-}  
+}
 
-header .image img{
+header .image img {
     max-width: 600px;
     margin: auto;
 }
 
-section .header{
+section .header {
     margin-bottom: 1rem;
     color: #fff;
     text-align: center;
@@ -116,64 +112,51 @@ section .header{
     font-weight: 600;
 }
 
-
-
-.sub-header{
+.sub-header {
     max-width: 600px;
     margin: auto;
     text-align: center;
     color: #ccc;
 }
 
-.copyright{
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-    color: #fff;
-    font-size: 0.8rem;
-    text-align: center;
-    position:static;
-    top: 95%;
-    left:500px;
+.footer {
+    grid-template-columns: 1fr 200px;
 }
 
-@media (width< 900px){
-    .nav-links{
+@media (width < 900px) {
+    .nav-links {
         display: none;
     }
-    header{
-        grid-template-columns: repeat(1,
-        1fr);
+    header {
+        grid-template-columns: repeat(1, 1fr);
     }
-    header .image{
+    header .image {
         grid-area: 1/1/2/2;
     }
-    .features{
-        grid-template-columns: repeat(2,
-        1fr);
-        }
-        footer{
-            grid-template-columns: 1fr 200px;
-        }
+    .features {
+        grid-template-columns: repeat(2, 1fr);
     }
+    footer {
+        grid-template-columns: 1fr 200px;
+    }
+}
 
-@media (width < 600px){
-    header .image::before{
+@media screen and (width: 600px) {
+    header .image::before {
         display: none;
     }
-
-    .features{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .pricing{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    footer{
+    footer {
         grid-template-columns: 1fr 150px;
+    }
+    .nav-links {
+        display: none;
     }
     .copyright {
         display: none;
+    }
+    .card {
+        width: auto;
+        height: auto;
     }
 }
 
@@ -181,16 +164,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-  }
-  
+}
 
 button {
     background-color: #1e40af;
@@ -203,71 +185,67 @@ button {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 4px;
-  }
+}
+
 button:hover {
     background-color: #ffffff;
     box-shadow: 0px 0px 10px;
-  
 }
 
-  
-  button:hover {
-    background-color: #1e40af;;
-  }
+button:hover {
+    background-color: #1e40af;
+}
 
-  
 .navbar {
-    background-color: #1E1E1E;
+    background-color: #1e1e1e;
     box-shadow: 0px 0px 4px white;
     color: #fff;
     width: 100%;
     border-radius: 9px;
     height: 50px;
-    
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .logo a {
+}
+
+.logo a {
     color: #fff;
     text-decoration: none;
     font-size: 24px;
     position: relative;
     top: -50px;
     left: -320px;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     position: relative;
     top: -52px;
-  }
+}
 
+.nav-links li {
+    margin: 0px 15px;
+}
 
-  .nav-links li {
-    margin: 0 15px;
-  }
-  
-  .nav-links li a {
+.nav-links li a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  
+}
+
 .login_btn {
-background-color: #1d4ed8;   
-margin: 10px;
-padding: 10px;
-color: white;
-border-radius: 10px;
-} 
+    background-color: #1d4ed8;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
 .discord {
     background-color: #7289da;
     margin: 10px;
@@ -279,7 +257,7 @@ border-radius: 10px;
 
 .discord:hover {
     background-color: #0037ff;
-    box-shadow: 0px 0px 10px ;
+    box-shadow: 0px 0px 10px;
 }
 
 .nav-links li a:hover {
@@ -308,7 +286,13 @@ border-radius: 10px;
     padding: 10px;
 }
 
-.card{
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.card {
     width: 200px;
     height: 300px;
     border-radius: 10px;
@@ -321,41 +305,38 @@ border-radius: 10px;
     margin: 10px 10px;
 }
 
-  /* tamaño de la targeta */
-
-  .card:hover {
+.card:hover {
     transform: scale(1.03);
-  }
-  
-  .cardC {
-  display:contents;
-  }
+}
 
+.cardC {
+    display: contents;
+}
 
 .card_face {
-  color: white;
-  display: none;
-  width: 200px;
-  height: 300px;
-  top:0;
-  position:absolute;
-  background-color: rgba(14, 14, 14, 0.616);
-  border-radius: 9px;
+    color: white;
+    display: none;
+    width: 200px;
+    height: 300px;
+    top: 0;
+    position: absolute;
+    background-color: rgba(14, 14, 14, 0.616);
+    border-radius: 9px;
 }
 
 .card-content .buy_link {
-  position: relative;
-  left: 50px;
-  top:250px;
-  border-radius: 9px;
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 20px;
-  background-color: greenyellow;
+    position: relative;
+    left: 50px;
+    top: 250px;
+    border-radius: 9px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: greenyellow;
 }
 
 .card:hover .card_face {
-display: flex;
+    display: flex;
 }
 
 .card-image img {
@@ -363,15 +344,23 @@ display: flex;
     position: relative;
     left: -70px;
     top: 10px;
-    
 }
 
-.item_name 
-{
+.item_name {
     font-size: larger;
     font-weight: bold;
     top: 200px;
     left: 50px;
     position: relative;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+@media (width < 575px) {
+    .nav-menu {
+        display: flex;
+    }
 }
 
