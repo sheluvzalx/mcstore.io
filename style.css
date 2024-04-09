@@ -405,7 +405,8 @@ button:hover {
     position: relative;
     top: -52px;
   }
-  
+
+
   .nav-links li {
     margin: 0 15px;
   }
@@ -443,9 +444,23 @@ button:hover {
   }
 
 .login_btn {
- background-color: #1d4ed8;   
- margin: 10px;
- padding: 10px;
- color: white;
- border-radius: 10px;
+background-color: #1d4ed8;   
+margin: 10px;
+padding: 10px;
+color: white;
+border-radius: 10px;
 } 
+.discord {
+    background-color: #7289da;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.discord:hover {
+    background-color: #0037ff;
+    box-shadow: 0px 10px 10px ;
+}
