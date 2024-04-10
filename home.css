@@ -1,0 +1,56 @@
+body {
+    background-color: #000000;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    user-select: none;
+    -webkit-user-modify: read-only;
+}
+
+/* blur */
+
+.blur {
+    background-color: rgb(0, 0, 255);
+    box-shadow: 0px 0px 1100px 221px blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation-name: bluranim;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    filter: blur(299px);
+}
+
+@keyframes bluranim {
+    0% {
+        box-shadow: 0px 0px 1100px 221px blue;
+        background-color: blue;
+    }
+    100% {
+        box-shadow: 0px 0px 1100px 221px rgb(255, 0, 0);
+        background-color: red;
+    }
+}
+
+
+span {
+    position: absolute;
+    font-size: 100px;
+    top: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    }
+
+a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 400px;
+    left: -50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+}

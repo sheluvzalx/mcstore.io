@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 * {
     padding: 0;
@@ -364,3 +362,16 @@ html {
     }
 }
 
+.copyright {
+ position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.copyright p {
+    margin
+}
