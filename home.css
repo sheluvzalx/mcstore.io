@@ -44,7 +44,6 @@ span {
     }
 
 a {
-    background-color: blue;
     color: white;
     text-decoration: none;
     position: relative;
@@ -53,4 +52,10 @@ a {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px white;
+    transition-duration: 1100ms;
+}
+
+a:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0px 4px 10px;
 }
